@@ -6,7 +6,6 @@ import Products from './components/Products'
 import Capabilities from './components/Capabilities'
 import Infrastructure from './components/Infrastructure'
 import Quality from './components/Quality'
-import ProductGallery from './components/ProductGallery'
 import WhyBES from './components/WhyBES'
 import Clients from './components/Clients'
 import CTASection from './components/CTASection'
@@ -28,7 +27,6 @@ function App() {
           <Capabilities />
           <Infrastructure />
           <Quality />
-          <ProductGallery />
           <WhyBES />
           <Clients />
           <CTASection />

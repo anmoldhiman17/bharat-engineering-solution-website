@@ -15,13 +15,13 @@ const Capabilities = () => {
   return (
     <section id="capabilities" className="pt-20 pb-24">
       <motion.div
-        variants={fadeIn('up', 0.2)}
+        variants={fadeIn('up', 0.1)}
         initial="hidden"
         whileInView="show"
         className="container mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2
-          variants={textVariant(0.3)}
+          variants={textVariant(0.15)}
           initial="hidden"
           whileInView="show"
           className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12"
@@ -30,7 +30,7 @@ const Capabilities = () => {
         </motion.h2>
 
         <motion.div
-          variants={fadeIn('up', 0.4)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
@@ -38,7 +38,7 @@ const Capabilities = () => {
           {capabilities.map((cap, index) => (
             <motion.div
               key={index}
-              variants={fadeIn('up', 0.1 * (index + 1))}
+              variants={fadeIn('up', 0.05 * (index + 1))}
               initial="hidden"
               whileInView="show"
               className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 p-6 text-center shadow-xs hover:shadow-md hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all duration-300"

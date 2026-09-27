@@ -6,14 +6,14 @@ const About = () => {
   return (
     <section id="about" className="pt-20 pb-24">
       <motion.div
-        variants={fadeIn('up', 0.2)}
+        variants={fadeIn('up', 0.1)}
         initial="hidden"
         whileInView="show"
         className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start"
       >
         {/* Left Column - Image */}
         <motion.div
-          variants={fadeIn('left', 0.3)}
+          variants={fadeIn('left', 0.15)}
           initial="hidden"
           whileInView="show"
           className="w-full md:w-1/2 mb-12 md:mb-0 md:mr-12"
@@ -33,13 +33,13 @@ const About = () => {
 
         {/* Right Column - Content */}
         <motion.div
-          variants={fadeIn('right', 0.3)}
+          variants={fadeIn('right', 0.15)}
           initial="hidden"
           whileInView="show"
           className="w-full md:w-1/2 space-y-6"
         >
           <motion.h2
-            variants={textVariant(0.4)}
+            variants={textVariant(0.2)}
             initial="hidden"
             whileInView="show"
             className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white"
@@ -48,7 +48,7 @@ const About = () => {
           </motion.h2>
 
           <motion.p
-            variants={fadeIn('up', 0.5)}
+            variants={fadeIn('up', 0.25)}
             initial="hidden"
             whileInView="show"
             className="text-slate-600 dark:text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed"
@@ -58,7 +58,7 @@ const About = () => {
           </motion.p>
 
           <motion.p
-            variants={fadeIn('up', 0.5)}
+            variants={fadeIn('up', 0.25)}
             initial="hidden"
             whileInView="show"
             className="text-slate-600 dark:text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed"
@@ -68,13 +68,13 @@ const About = () => {
 
           {/* Our Approach / Built Around Quality */}
           <motion.div
-            variants={fadeIn('up', 0.6)}
+            variants={fadeIn('up', 0.3)}
             initial="hidden"
             whileInView="show"
             className="bg-blue-50/70 dark:bg-slate-900/90 border border-blue-100/70 dark:border-slate-800/80 rounded-2xl p-6 shadow-xs"
           >
             <motion.h3
-              variants={textVariant(0.7)}
+              variants={textVariant(0.35)}
               initial="hidden"
               whileInView="show"
               className="text-xl font-semibold text-slate-900 dark:text-white mb-3"
@@ -82,7 +82,7 @@ const About = () => {
               Built Around Quality
             </motion.h3>
             <motion.p
-              variants={fadeIn('up', 0.7)}
+              variants={fadeIn('up', 0.35)}
               initial="hidden"
               whileInView="show"
               className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed"

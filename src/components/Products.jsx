@@ -10,13 +10,13 @@ const Products = () => {
   return (
     <section id="products" className="pt-20 pb-24">
       <motion.div
-        variants={fadeIn('up', 0.2)}
+        variants={fadeIn('up', 0.1)}
         initial="hidden"
         whileInView="show"
         className="container mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2
-          variants={textVariant(0.3)}
+          variants={textVariant(0.1)}
           initial="hidden"
           whileInView="show"
           className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12"
@@ -33,7 +33,7 @@ const Products = () => {
           {products.map((product) => (
             <motion.div
               key={product.id}
-              variants={fadeIn('up', 0.1 * product.id)}
+              variants={fadeIn('up', 0.05 * product.id)}
               initial="hidden"
               whileInView="show"
               className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden shadow-xs hover:shadow-md hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between"
@@ -63,7 +63,7 @@ const Products = () => {
         </motion.div>
 
         <motion.div
-          variants={fadeIn('up', 0.5)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
           className="flex justify-center mt-12"
