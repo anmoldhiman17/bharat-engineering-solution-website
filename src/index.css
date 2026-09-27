@@ -1,11 +1,32 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
 
-/* customize container here using tailwindcss */
+/* Customize container here using tailwindcss */
 .section-container {
-  @apply  px-4 sm:px-6 lg:px-8 py-16 container mx-auto;
+  @apply px-4 sm:px-6 lg:px-8 py-16 container mx-auto;
+}
+
+/* Global transitions and theme vars */
+:root {
+  --bg-main: #ffffff;
+  --text-main: #0f172a;
+  color-scheme: light;
+}
+
+.dark {
+  --bg-main: #0b0f17;
+  --text-main: #f8fafc;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }

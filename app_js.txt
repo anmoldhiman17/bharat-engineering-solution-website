@@ -1,0 +1,172 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/App.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=820ca36d"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.__vite_plugin_react_preamble_installed__) {
+    throw new Error("@vitejs/plugin-react can't detect preamble. Something is wrong. See https://github.com/vitejs/vite-plugin-react/pull/11#discussion_r430879201");
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = (type, id) => {
+    RefreshRuntime.register(type, "C:/Users/DELL/modern-business-landing-page/src/App.jsx " + id);
+  };
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import "/src/App.css";
+import Navbar from "/src/components/Navbar.jsx";
+import Hero from "/src/components/Hero.jsx";
+import TrustStrip from "/src/components/TrustStrip.jsx";
+import About from "/src/components/About.jsx";
+import Products from "/src/components/Products.jsx";
+import Capabilities from "/src/components/Capabilities.jsx";
+import Infrastructure from "/src/components/Infrastructure.jsx";
+import Quality from "/src/components/Quality.jsx";
+import ProductGallery from "/src/components/ProductGallery.jsx";
+import WhyBES from "/src/components/WhyBES.jsx";
+import Clients from "/src/components/Clients.jsx";
+import CTASection from "/src/components/CTASection.jsx";
+import Contact from "/src/components/Contact.jsx";
+import Footer from "/src/components/Footer.jsx";
+import FloatingWhatsApp from "/src/components/FloatingWhatsApp.jsx";
+import __vite__cjsImport19_react from "/node_modules/.vite/deps/react.js?v=820ca36d"; const useState = __vite__cjsImport19_react["useState"];
+function App() {
+  _s();
+  const [error, setError] = useState(null);
+  try {
+    return /* @__PURE__ */ jsxDEV("main", { className: "relative min-h-screen overflow-x-hidden", children: /* @__PURE__ */ jsxDEV("div", { className: "overflow-hidden", children: [
+      /* @__PURE__ */ jsxDEV(Navbar, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 25,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Hero, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 26,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(TrustStrip, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 27,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(About, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 28,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Products, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 29,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Capabilities, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Infrastructure, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 31,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Quality, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 32,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(ProductGallery, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 33,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(WhyBES, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 34,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Clients, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 35,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(CTASection, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 36,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Contact, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 37,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(Footer, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 38,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(FloatingWhatsApp, {}, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 39,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+      lineNumber: 24,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+      lineNumber: 23,
+      columnNumber: 7
+    }, this);
+  } catch (err) {
+    setError(err);
+    return /* @__PURE__ */ jsxDEV("div", { className: "p-4 bg-red-50 text-red-800", children: [
+      /* @__PURE__ */ jsxDEV("h2", { className: "text-xl font-bold", children: "Rendering Error" }, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 47,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mt-2", children: err.message }, void 0, false, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 48,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "mt-2", children: [
+        "Stack: ",
+        err.stack
+      ] }, void 0, true, {
+        fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+        lineNumber: 49,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/DELL/modern-business-landing-page/src/App.jsx",
+      lineNumber: 46,
+      columnNumber: 7
+    }, this);
+  }
+}
+_s(App, "A8i/78Fx3FIozbyR2zwnz0NK35o=");
+_c = App;
+export default App;
+var _c;
+$RefreshReg$(_c, "App");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/DELL/modern-business-landing-page/src/App.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/DELL/modern-business-landing-page/src/App.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBd0JVOzJCQXhCVjtBQUFrQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNsQixPQUFPQSxZQUFZO0FBQ25CLE9BQU9DLFVBQVU7QUFDakIsT0FBT0MsZ0JBQWdCO0FBQ3ZCLE9BQU9DLFdBQVc7QUFDbEIsT0FBT0MsY0FBYztBQUNyQixPQUFPQyxrQkFBa0I7QUFDekIsT0FBT0Msb0JBQW9CO0FBQzNCLE9BQU9DLGFBQWE7QUFDcEIsT0FBT0Msb0JBQW9CO0FBQzNCLE9BQU9DLFlBQVk7QUFDbkIsT0FBT0MsYUFBYTtBQUNwQixPQUFPQyxnQkFBZ0I7QUFDdkIsT0FBT0MsYUFBYTtBQUNwQixPQUFPQyxZQUFZO0FBQ25CLE9BQU9DLHNCQUFzQjtBQUM3QixTQUFTQyxnQkFBZ0I7QUFFekIsU0FBU0MsTUFBTTtBQUFBQyxLQUFBO0FBQ2IsUUFBTSxDQUFDQyxPQUFPQyxRQUFRLElBQUlKLFNBQVMsSUFBSTtBQUN2QyxNQUFJO0FBQ0YsV0FDRSx1QkFBQyxVQUFLLFdBQVUsMkNBQ2QsaUNBQUMsU0FBSSxXQUFVLG1CQUNiO0FBQUEsNkJBQUMsWUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQU87QUFBQSxNQUNQLHVCQUFDLFVBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFLO0FBQUEsTUFDTCx1QkFBQyxnQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQVc7QUFBQSxNQUNYLHVCQUFDLFdBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFNO0FBQUEsTUFDTix1QkFBQyxjQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBUztBQUFBLE1BQ1QsdUJBQUMsa0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFhO0FBQUEsTUFDYix1QkFBQyxvQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQWU7QUFBQSxNQUNmLHVCQUFDLGFBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFRO0FBQUEsTUFDUix1QkFBQyxvQkFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQWU7QUFBQSxNQUNmLHVCQUFDLFlBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFPO0FBQUEsTUFDUCx1QkFBQyxhQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBUTtBQUFBLE1BQ1IsdUJBQUMsZ0JBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFXO0FBQUEsTUFDWCx1QkFBQyxhQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBUTtBQUFBLE1BQ1IsdUJBQUMsWUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQU87QUFBQSxNQUNQLHVCQUFDLHNCQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBaUI7QUFBQSxTQWZuQjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBZ0JBLEtBakJGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FrQkE7QUFBQSxFQUVKLFNBQVNLLEtBQUs7QUFDWkQsYUFBU0MsR0FBRztBQUNaLFdBQ0UsdUJBQUMsU0FBSSxXQUFVLDhCQUNiO0FBQUEsNkJBQUMsUUFBRyxXQUFVLHFCQUFvQiwrQkFBbEM7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFpRDtBQUFBLE1BQ2pELHVCQUFDLE9BQUUsV0FBVSxRQUFRQSxjQUFJQyxXQUF6QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQWlDO0FBQUEsTUFDakMsdUJBQUMsT0FBRSxXQUFVLFFBQU87QUFBQTtBQUFBLFFBQVFELElBQUlFO0FBQUFBLFdBQWhDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBc0M7QUFBQSxTQUh4QztBQUFBO0FBQUE7QUFBQTtBQUFBLFdBSUE7QUFBQSxFQUVKO0FBQ0Y7QUFBQ0wsR0FsQ1FELEtBQUc7QUFBQU8sS0FBSFA7QUFvQ1QsZUFBZUE7QUFBRyxJQUFBTztBQUFBQyxhQUFBRCxJQUFBIiwibmFtZXMiOlsiTmF2YmFyIiwiSGVybyIsIlRydXN0U3RyaXAiLCJBYm91dCIsIlByb2R1Y3RzIiwiQ2FwYWJpbGl0aWVzIiwiSW5mcmFzdHJ1Y3R1cmUiLCJRdWFsaXR5IiwiUHJvZHVjdEdhbGxlcnkiLCJXaHlCRVMiLCJDbGllbnRzIiwiQ1RBU2VjdGlvbiIsIkNvbnRhY3QiLCJGb290ZXIiLCJGbG9hdGluZ1doYXRzQXBwIiwidXNlU3RhdGUiLCJBcHAiLCJfcyIsImVycm9yIiwic2V0RXJyb3IiLCJlcnIiLCJtZXNzYWdlIiwic3RhY2siLCJfYyIsIiRSZWZyZXNoUmVnJCJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBcHAuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9BcHAuY3NzJ1xuaW1wb3J0IE5hdmJhciBmcm9tICcuL2NvbXBvbmVudHMvTmF2YmFyJ1xuaW1wb3J0IEhlcm8gZnJvbSAnLi9jb21wb25lbnRzL0hlcm8nXG5pbXBvcnQgVHJ1c3RTdHJpcCBmcm9tICcuL2NvbXBvbmVudHMvVHJ1c3RTdHJpcCdcbmltcG9ydCBBYm91dCBmcm9tICcuL2NvbXBvbmVudHMvQWJvdXQnXG5pbXBvcnQgUHJvZHVjdHMgZnJvbSAnLi9jb21wb25lbnRzL1Byb2R1Y3RzJ1xuaW1wb3J0IENhcGFiaWxpdGllcyBmcm9tICcuL2NvbXBvbmVudHMvQ2FwYWJpbGl0aWVzJ1xuaW1wb3J0IEluZnJhc3RydWN0dXJlIGZyb20gJy4vY29tcG9uZW50cy9JbmZyYXN0cnVjdHVyZSdcbmltcG9ydCBRdWFsaXR5IGZyb20gJy4vY29tcG9uZW50cy9RdWFsaXR5J1xuaW1wb3J0IFByb2R1Y3RHYWxsZXJ5IGZyb20gJy4vY29tcG9uZW50cy9Qcm9kdWN0R2FsbGVyeSdcbmltcG9ydCBXaHlCRVMgZnJvbSAnLi9jb21wb25lbnRzL1doeUJFUydcbmltcG9ydCBDbGllbnRzIGZyb20gJy4vY29tcG9uZW50cy9DbGllbnRzJ1xuaW1wb3J0IENUQVNlY3Rpb24gZnJvbSAnLi9jb21wb25lbnRzL0NUQVNlY3Rpb24nXG5pbXBvcnQgQ29udGFjdCBmcm9tICcuL2NvbXBvbmVudHMvQ29udGFjdCdcbmltcG9ydCBGb290ZXIgZnJvbSAnLi9jb21wb25lbnRzL0Zvb3RlcidcbmltcG9ydCBGbG9hdGluZ1doYXRzQXBwIGZyb20gJy4vY29tcG9uZW50cy9GbG9hdGluZ1doYXRzQXBwJ1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCdcblxuZnVuY3Rpb24gQXBwKCkge1xuICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKG51bGwpO1xuICB0cnkge1xuICAgIHJldHVybiAoXG4gICAgICA8bWFpbiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC1zY3JlZW4gb3ZlcmZsb3cteC1oaWRkZW5cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICA8TmF2YmFyIC8+XG4gICAgICAgICAgPEhlcm8gLz5cbiAgICAgICAgICA8VHJ1c3RTdHJpcCAvPlxuICAgICAgICAgIDxBYm91dCAvPlxuICAgICAgICAgIDxQcm9kdWN0cyAvPlxuICAgICAgICAgIDxDYXBhYmlsaXRpZXMgLz5cbiAgICAgICAgICA8SW5mcmFzdHJ1Y3R1cmUgLz5cbiAgICAgICAgICA8UXVhbGl0eSAvPlxuICAgICAgICAgIDxQcm9kdWN0R2FsbGVyeSAvPlxuICAgICAgICAgIDxXaHlCRVMgLz5cbiAgICAgICAgICA8Q2xpZW50cyAvPlxuICAgICAgICAgIDxDVEFTZWN0aW9uIC8+XG4gICAgICAgICAgPENvbnRhY3QgLz5cbiAgICAgICAgICA8Rm9vdGVyIC8+XG4gICAgICAgICAgPEZsb2F0aW5nV2hhdHNBcHAgLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L21haW4+XG4gICAgKTtcbiAgfSBjYXRjaCAoZXJyKSB7XG4gICAgc2V0RXJyb3IoZXJyKTtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwLTQgYmctcmVkLTUwIHRleHQtcmVkLTgwMFwiPlxuICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC14bCBmb250LWJvbGRcIj5SZW5kZXJpbmcgRXJyb3I8L2gyPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC0yXCI+e2Vyci5tZXNzYWdlfTwvcD5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMlwiPlN0YWNrOiB7ZXJyLnN0YWNrfTwvcD5cbiAgICAgIDwvZGl2PlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwIl0sImZpbGUiOiJDOi9Vc2Vycy9ERUxML21vZGVybi1idXNpbmVzcy1sYW5kaW5nLXBhZ2Uvc3JjL0FwcC5qc3gifQ==

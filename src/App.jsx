@@ -1,37 +1,53 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import CompanyLogo from './components/CompanyLogo'
-import PurposeSection from './components/PurposeSection'
-import FeaturesSection from './components/FeaturesSection'
-import ScheduleSection from './components/ScheduleSection'
-import MonitorSection from './components/MonitorSection'
-import PricingSection from './components/PricingSection'
-import ServicesSection from './components/ServicesSection'
-import TestimonialsSection from './components/TestimonialsSection'
-import NewsletterSection from './components/NewsletterSection'
+import About from './components/About'
+import Products from './components/Products'
+import Capabilities from './components/Capabilities'
+import Infrastructure from './components/Infrastructure'
+import Quality from './components/Quality'
+import ProductGallery from './components/ProductGallery'
+import WhyBES from './components/WhyBES'
+import Clients from './components/Clients'
+import CTASection from './components/CTASection'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
+import { useState } from 'react'
 
 function App() {
-  return (
-    <main className="relative min-h-screen overflow-x-hidden">
-      <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
-      <div className="overflow-hidden">
-        <Navbar />
-        <Hero />
-        <CompanyLogo />
-        <PurposeSection />
-        <FeaturesSection />
-        <ScheduleSection />
-        <MonitorSection />
-        <PricingSection />
-        <ServicesSection />
-        <TestimonialsSection />
-        <NewsletterSection />
-        <Footer />
+  const [error, setError] = useState(null);
+  try {
+    return (
+      <main className="relative min-h-screen overflow-x-hidden">
+        <div className="overflow-hidden">
+          <Navbar />
+          <Hero />
+          <About />
+          <Products />
+          <Capabilities />
+          <Infrastructure />
+          <Quality />
+          <ProductGallery />
+          <WhyBES />
+          <Clients />
+          <CTASection />
+          <Contact />
+          <Footer />
+          <FloatingWhatsApp />
+        </div>
+      </main>
+    );
+  } catch (err) {
+    setError(err);
+    return (
+      <div className="p-4 bg-red-50 text-red-800">
+        <h2 className="text-xl font-bold">Rendering Error</h2>
+        <p className="mt-2">{err.message}</p>
+        <p className="mt-2">Stack: {err.stack}</p>
       </div>
-    </main>
-  )
+    );
+  }
 }
 
 export default App
