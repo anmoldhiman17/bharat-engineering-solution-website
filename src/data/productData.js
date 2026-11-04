@@ -8,10 +8,9 @@ import spotCoolingImg4 from "../assets/products/spot-water-cooling/image4.jpg";
 import spotCoolingImg5 from "../assets/products/spot-water-cooling/image5.jpg";
 
 // =========================================================================
-// JET COOLING ASSEMBLY - 8 POLISHED PRODUCT IMAGES
+// JET COOLING ASSEMBLY - 7 POLISHED PRODUCT IMAGES
 // =========================================================================
 import jetCoolingImg1 from "../assets/products/jet-cooling/image1.jpg";
-import jetCoolingImg2 from "../assets/products/jet-cooling/image2.jpg";
 import jetCoolingImg3 from "../assets/products/jet-cooling/image3.jpg";
 import jetCoolingImg4 from "../assets/products/jet-cooling/image4.jpg";
 import jetCoolingImg5 from "../assets/products/jet-cooling/image5.jpg";
@@ -43,6 +42,22 @@ import ejectorPinsImg4 from "../assets/products/ejector-pins/image4.jpg";
 // HOLE FORMING PINS - 600x300 FORMAT
 // =========================================================================
 import holeFormingPinsImg1 from "../assets/products/hole-forming-pins/image1.jpg";
+
+// =========================================================================
+// PLUNGER ROD ADAPTER - 600x350 FORMAT (3 SHOTS)
+// =========================================================================
+import plungerAdapterImg1 from "../assets/products/plunger-rod-adapter/image1.jpg";
+import plungerAdapterImg2 from "../assets/products/plunger-rod-adapter/image2.jpg";
+import plungerAdapterImg3 from "../assets/products/plunger-rod-adapter/image3.jpg";
+
+// =========================================================================
+// SHOT SLEEVE - 600x400 FORMAT (5 SHOTS)
+// =========================================================================
+import shotSleeveImg1 from "../assets/products/shot-sleeve/image1.jpg";
+import shotSleeveImg2 from "../assets/products/shot-sleeve/image2.jpg";
+import shotSleeveImg3 from "../assets/products/shot-sleeve/image3.jpg";
+import shotSleeveImg4 from "../assets/products/shot-sleeve/image4.jpg";
+import shotSleeveImg5 from "../assets/products/shot-sleeve/image5.jpg";
 
 export const products = [
   {
@@ -85,7 +100,6 @@ export const products = [
     images: [
       jetCoolingImg8, // image 8: Studio catalog shot of L34/L21/L11 unit
       jetCoolingImg1,
-      jetCoolingImg2,
       jetCoolingImg3,
       jetCoolingImg4,
       jetCoolingImg5,
@@ -323,11 +337,11 @@ export const products = [
     id: 10,
     name: "Plunger Rod Adapter",
     category: "Die-Casting Components",
-    description: "Adapters for secure plunger rod connections.",
+    description: "Heavy-duty precision-machined adapters for secure, high-torque plunger rod connections.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      plungerAdapterImg1, // 3/4 perspective studio shot showing precision threads & spanner flats
+      plungerAdapterImg2, // Horizontal profile view showing dual threaded studs and wrench flats
+      plungerAdapterImg3  // Pair of manufactured plunger rod adapters
     ],
     features: [
       "Secure mechanical connection",
@@ -353,11 +367,13 @@ export const products = [
     id: 11,
     name: "Shot Sleeve",
     category: "Die-Casting Components",
-    description: "Durable shot sleeves for die-casting operations.",
+    description: "High-wear resistant precision-machined shot sleeves for cold and hot chamber die-casting machines.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      shotSleeveImg1, // Trio of precision shot sleeves in various lengths with pour holes
+      shotSleeveImg2, // Dual view: vertical sleeve + horizontal sleeve showing honed inner bore & mounting face
+      shotSleeveImg3, // Single precision shot sleeve studio 3/4 perspective shot
+      shotSleeveImg4, // Three shot sleeves comparing polished tool steel and nitrided surface finishes
+      shotSleeveImg5  // Horizontal full-length shot sleeve with integral mounting collar and pour port
     ],
     features: [
       "Wear-resistant inner surface",
