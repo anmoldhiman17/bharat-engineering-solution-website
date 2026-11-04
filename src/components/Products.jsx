@@ -3,9 +3,16 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../assets/motion";
 import { products } from "../data/productData";
 import ProductDetailModal from "./ProductDetailModal";
+import ProductCardSlider from "./ProductCardSlider";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [initialIndex, setInitialIndex] = useState(0);
+
+  const handleOpenModal = (product, slideIndex = 0) => {
+    setInitialIndex(slideIndex);
+    setSelectedProduct(product);
+  };
 
   return (
     <section id="products" className="pt-20 pb-24">
@@ -36,25 +43,27 @@ const Products = () => {
               variants={fadeIn('up', 0.05 * product.id)}
               initial="hidden"
               whileInView="show"
-              className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden shadow-xs hover:shadow-md hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between"
-              onClick={() => setSelectedProduct(product)}
+              className="bg-white dark:bg-slate-900/90 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 overflow-hidden shadow-xs hover:shadow-xl hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:shadow-blue-500/10 dark:hover:shadow-[0_0_28px_rgba(37,99,235,0.22)] transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+              onClick={() => handleOpenModal(product, 0)}
             >
-              <div className="h-44 bg-slate-100/70 dark:bg-slate-800/60 flex flex-col items-center justify-center relative border-b border-slate-200/60 dark:border-slate-800/60 p-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-600/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-2">
-                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.6 15.12a2 2 0 00-1.182.247l-.234.148A2 2 0 003.2 17.2V19a2 2 0 002 2h13.6a2 2 0 002-2v-1.8a2 2 0 00-.972-1.714l-.4-.258zM12 4v8" />
-                  </svg>
-                </div>
-                <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                  {product.category || "Engineering Component"}
-                </span>
-              </div>
+              {/* Product Card Top Carousel Slider */}
+              <ProductCardSlider
+                images={product.images}
+                productName={product.name}
+                category={product.category}
+                onCardClick={() => handleOpenModal(product, 0)}
+              />
+
               <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2 leading-snug">{product.name}</h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 leading-relaxed">{product.description}</p>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {product.name}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 leading-relaxed">
+                    {product.description}
+                  </p>
                 </div>
-                <div className="pt-2 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
+                <div className="pt-2 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
                   View Specifications &rarr;
                 </div>
               </div>
@@ -79,7 +88,11 @@ const Products = () => {
 
       {/* Product Detail Modal */}
       {selectedProduct && (
-        <ProductDetailModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
+        <ProductDetailModal
+          product={selectedProduct}
+          initialImageIndex={initialIndex}
+          onClose={() => setSelectedProduct(null)}
+        />
       )}
     </section>
   );

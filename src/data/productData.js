@@ -1,3 +1,49 @@
+// =========================================================================
+// SPOT WATER COOLING NIPPLE ASSEMBLY - 5 UNIQUE PRODUCT IMAGES
+// =========================================================================
+import spotCoolingImg1 from "../assets/products/spot-water-cooling/image1.jpg";
+import spotCoolingImg2 from "../assets/products/spot-water-cooling/image2.jpg";
+import spotCoolingImg3 from "../assets/products/spot-water-cooling/image3.jpg";
+import spotCoolingImg4 from "../assets/products/spot-water-cooling/image4.jpg";
+import spotCoolingImg5 from "../assets/products/spot-water-cooling/image5.jpg";
+
+// =========================================================================
+// JET COOLING ASSEMBLY - 8 POLISHED PRODUCT IMAGES
+// =========================================================================
+import jetCoolingImg1 from "../assets/products/jet-cooling/image1.jpg";
+import jetCoolingImg2 from "../assets/products/jet-cooling/image2.jpg";
+import jetCoolingImg3 from "../assets/products/jet-cooling/image3.jpg";
+import jetCoolingImg4 from "../assets/products/jet-cooling/image4.jpg";
+import jetCoolingImg5 from "../assets/products/jet-cooling/image5.jpg";
+import jetCoolingImg6 from "../assets/products/jet-cooling/image6.jpg";
+import jetCoolingImg7 from "../assets/products/jet-cooling/image7.jpg";
+import jetCoolingImg8 from "../assets/products/jet-cooling/image8.jpg";
+
+// =========================================================================
+// SPRAY HEAD PIPE - 500x400 FORMAT (3 SHOTS)
+// =========================================================================
+import sprayHeadPipeImg1 from "../assets/products/spray-head-pipe/image1.jpg";
+import sprayHeadPipeImg2 from "../assets/products/spray-head-pipe/image2.jpg";
+import sprayHeadPipeImg3 from "../assets/products/spray-head-pipe/image3.jpg";
+
+// =========================================================================
+// SPRAY CACIT - 600x400 FORMAT
+// =========================================================================
+import sprayCacitImg1 from "../assets/products/spray-cacit/image1.jpg";
+
+// =========================================================================
+// EJECTOR PINS - 600x300 FORMAT (4 SHOTS)
+// =========================================================================
+import ejectorPinsImg1 from "../assets/products/ejector-pins/image1.jpg";
+import ejectorPinsImg2 from "../assets/products/ejector-pins/image2.jpg";
+import ejectorPinsImg3 from "../assets/products/ejector-pins/image3.jpg";
+import ejectorPinsImg4 from "../assets/products/ejector-pins/image4.jpg";
+
+// =========================================================================
+// HOLE FORMING PINS - 600x300 FORMAT
+// =========================================================================
+import holeFormingPinsImg1 from "../assets/products/hole-forming-pins/image1.jpg";
+
 export const products = [
   {
     id: 1,
@@ -5,9 +51,11 @@ export const products = [
     category: "Cooling Components",
     description: "Precision-engineered for efficient cooling in die-casting operations.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      spotCoolingImg1, // image 1: Disassembled precision brass & copper components
+      spotCoolingImg2, // image 2: Assembled cooling nozzle head & connector
+      spotCoolingImg3, // image 3: Full-length dual copper cooling tube assembly
+      spotCoolingImg4, // image 4: Extended parts & threaded joint fittings layout
+      spotCoolingImg5  // image 5: Complete assembled spot cooling unit
     ],
     features: [
       "High thermal conductivity",
@@ -35,9 +83,14 @@ export const products = [
     category: "Cooling Components",
     description: "High-performance cooling solution for industrial manufacturing processes.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      jetCoolingImg8, // image 8: Studio catalog shot of L34/L21/L11 unit
+      jetCoolingImg1,
+      jetCoolingImg2,
+      jetCoolingImg3,
+      jetCoolingImg4,
+      jetCoolingImg5,
+      jetCoolingImg6,
+      jetCoolingImg7
     ],
     features: [
       "High velocity coolant delivery",
@@ -63,11 +116,11 @@ export const products = [
     id: 3,
     name: "Spray Head Pipe",
     category: "Cooling Components",
-    description: "Durable piping system for spray cooling applications.",
+    description: "Durable copper & brass piping system for precision spray cooling applications.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      sprayHeadPipeImg1, // Vertical studio shot with brass hex connector
+      sprayHeadPipeImg2, // Angled full perspective shot with bottom brass fitting
+      sprayHeadPipeImg3  // Angled perspective shot with dual brass fittings
     ],
     features: [
       "Corrosion resistant construction",
@@ -76,7 +129,7 @@ export const products = [
       "Flexible routing options"
     ],
     specifications: [
-      { label: "Material", value: "Stainless steel 304" },
+      { label: "Material", value: "Copper & Brass Alloy" },
       { label: "Diameter", value: "25mm" },
       { label: "Length", value: "Up to 3 meters" },
       { label: "Pressure Rating", value: "Up to 20 bar" }
@@ -93,23 +146,21 @@ export const products = [
     id: 4,
     name: "Spray Cacit",
     category: "Cooling Components",
-    description: "Specialized component for spray cooling systems.",
+    description: "Precision-machined multi-port spray cassette block for uniform die cooling.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      sprayCacitImg1 // 600x400 centered studio shot of precision multi-port manifold plate
     ],
     features: [
-      "Precise spray pattern control",
-      "Anti-clogging design",
-      "Quick-release mechanism",
-      "Durable construction"
+      "Precise multi-port spray distribution",
+      "Heavy-duty CNC machined plate construction",
+      "Anti-clogging precision orifice geometry",
+      "Direct 4-point counterbored fixture mounting"
     ],
     specifications: [
-      { label: "Material", value: "Brass with ceramic insert" },
-      { label: "Spray Angle", value: "0° to 90° adjustable" },
-      { label: "Flow Capacity", value: "Up to 20 L/min" },
-      { label: "Connection", value: "Standard threaded" }
+      { label: "Material", value: "Stainless Steel / Tool Steel" },
+      { label: "Orifice Count", value: "20 Precision Ports (Dual Row)" },
+      { label: "Mounting", value: "4-Point Counterbored" },
+      { label: "Connection", value: "Internal Manifold Channel" }
     ],
     applications: [
       "Continuous casting",
@@ -117,7 +168,7 @@ export const products = [
       "Forging operations",
       "Heat treatment lines"
     ],
-    customization: "Custom spray patterns and flow rates available upon request."
+    customization: "Custom spray patterns, hole layouts, and plate dimensions available upon request."
   },
   {
     id: 5,
@@ -153,11 +204,12 @@ export const products = [
     id: 6,
     name: "Ejector Pins",
     category: "Die-Casting Components",
-    description: "Precision ejector pins for die-casting molds.",
+    description: "Precision-ground through-hardened ejector pins for high-pressure die-casting and injection molds.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      ejectorPinsImg1, // Stepped precision ejector pins (5-piece set)
+      ejectorPinsImg2, // Horizontal profile comparison of head styles & lengths
+      ejectorPinsImg3, // Slender precision core ejector pins with cylindrical heads
+      ejectorPinsImg4  // Single precision core ejector pin studio perspective shot
     ],
     features: [
       "Precision ground finish",
@@ -183,11 +235,9 @@ export const products = [
     id: 7,
     name: "Hole Forming Pins",
     category: "Die-Casting Components",
-    description: "Specialized pins for creating precise holes in cast components.",
+    description: "Specialized stepped precision core pins for creating precise holes in cast components.",
     images: [
-      "https://via.placeholder.com/600x400",
-      "https://via.placeholder.com/600x300",
-      "https://via.placeholder.com/600x350"
+      holeFormingPinsImg1 // 600x300 centered studio shot of stepped black nitrided core pin
     ],
     features: [
       "High precision tolerances",
